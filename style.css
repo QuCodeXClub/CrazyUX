@@ -50,6 +50,7 @@ body {
 .hero-section {
     min-height: 80vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
@@ -688,4 +689,18 @@ body {
 .faq-card p {
     font-size: 0.9rem;
     color: #777;
+}
+.scroll-teaser {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #666; /* Or a slightly faded version of your text color */
+    letter-spacing: 1px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-5px);}
+    60% {transform: translateY(-3px);}
 }
